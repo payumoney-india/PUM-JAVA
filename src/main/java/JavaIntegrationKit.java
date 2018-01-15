@@ -64,9 +64,10 @@ public class JavaIntegrationKit {
     protected Map<String, String> hashCalMethod(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String salt = "fE0aTrjr";
+		String key = "";
+        String salt = "";
         String action1 = "";
-        String base_url = "https://test.payu.in";
+        String base_url = "https://sandboxsecure.payu.in";
         error = 0;
         String hashString = "";
         Enumeration paramNames = request.getParameterNames();
